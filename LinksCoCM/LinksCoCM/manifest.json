@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "LinksCoCM",
+  "description": "Chrome extension that creates a markdown-formated-link based on the selected text of a site and its URL",
+  "version": "1.0",
+  "author": "jorgeluisrmx@gmail.com",
+  "icons": {
+    "128": "icon.png",
+    "48": "icon.png",
+    "16": "icon.png"
+  },
+
+  "browser_action": {
+   "default_icon": "icon.png"
+  },
+  
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+  },
+
+  "permissions": [
+   "storage",
+   "notifications",
+   "tabs",
+   "contextMenus"
+   ]
+}

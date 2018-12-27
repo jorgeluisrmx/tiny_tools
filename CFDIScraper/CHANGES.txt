@@ -1,0 +1,4 @@
+v1.0, 15/11/15 -- Initial release
+v1.1, 16/11/15 -- Se agrega capacidad para procesar comprobantes de no tienen 
+                  totalImpuestosTrasladados como atributo en nodo Impuestos
+v1.2, 08/12/15 -- Se agrega soporte para reportar descuentos en CFDI

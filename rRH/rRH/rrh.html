@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <title>rRH</title>
+    <script src="rrh.js"></script>
+    <style>
+    body {
+        width: 600px;
+        height: 400px;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    hr {
+        margin: 50px;
+    }
+
+    .title {
+        color: #009933;
+    }
+
+    .subtitle {
+        color: #2455C3;
+    }
+
+    .button {
+        border: none;
+        color: white;
+        padding: 5px 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+
+    .button-green {
+        background-color: #4CAF50;
+    }
+
+    .button-red {
+        background-color: #85100F;
+    }
+
+    .hidden {
+        display: none;
+    }
+    
+    .attention {
+        color: #c40b0b;
+        text-align: center;
+        font-weight: bold;
+        font-size: 120%;
+    }
+    </style>
+  </head>
+  <body>
+    <h1 class="title" align="center">rRH analyzer</h1>
+
+    <a href="#" id="createSumm" class="button button-green"><b>Create summary</b></a>
+    <a href="#" id="downloadCsv" class="button button-red hidden"><b>Download CSV</b></a>
+    <a href="#" id="downloadLink" style="display: none;"></a>
+
+    <div id="results" style="margin-bottom: 50px;"></div>
+  </body>
+</html>

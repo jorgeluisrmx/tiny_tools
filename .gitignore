@@ -1,0 +1,7 @@
+*~
+*.pyc
+**/credentials.json
+*build/
+**/.ipynb_checkpoints/
+*.autosave
+
