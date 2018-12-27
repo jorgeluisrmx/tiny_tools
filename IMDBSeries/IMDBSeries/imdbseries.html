@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+  <head>
+    <title>IMDB Series</title>
+    <script src="imdbseries.js"></script>
+    <style>
+    body {
+        width: 350px;
+        height: 400px;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    hr {
+        margin: 50px;
+    }
+
+    .title {
+        color: #009933;
+    }
+
+    .subtitle {
+        color: #2455C3;
+    }
+    
+    .ser_name {
+        color: #2455C3;
+        font-weight: bold;
+        font-size: 130%;
+    }
+    
+    a:link.ser_name {
+	    color:				#2455C3;
+	    text-decoration:	none;
+    } 
+    
+    a:visited.ser_name {
+	    color:				#2455C3;
+	    text-decoration:	none;
+    }
+    
+    a:hover.ser_name	{
+	    color:				#2455C3;
+	    text-decoration:	none;
+    }
+
+    a:active.ser_name {
+	    color:				#2455C3;
+	    text-decoration:	none;
+    }
+    
+    .container {
+        float: left;
+    }
+
+    .button {
+        border: none;
+        color: white;
+        padding: 5px 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+
+    .button-green {
+        background-color: #4CAF50;
+    }
+
+    .button-red {
+        background-color: #85100F;
+    }
+
+    .hidden {
+        display: none;
+    }
+    </style>
+  </head>
+  <body>
+    <h1 class="title" align="center">IMDB TV Series</h1>
+    
+    <div id="seriesdates"></div>
+    
+    
+    <div class="container" style="margin-right: 25px;">
+    <h2 class="subtitle" align="left">Add series</h2>
+    <form action="">
+        Series name:<br>
+        <input type="text" name="seriesname" value="" id="seriesname">
+        <br>
+        IMDB episodes URL:<br>
+        <input type="text" name="episodesurl" value="" id="episodesurl">
+        <br><br>
+        <a href="#" id="addSeries" class="button button-green"><b>Add series</b></a>
+    </form>
+    </div> 
+    
+    
+    <div class="container">
+    <h2 class="subtitle" align="left">Remove series</h2>
+    <form action="" style="margin-bottom: 50px;">
+        Choose a series:<br>
+        <select name="seriesNameSelect" id="seriesNameSelect">
+            <option value=""></option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br><br>
+        <a href="#" id="removeSeries" class="button button-red"><b>Remove series</b></a>
+    </form>
+    </div>
+    
+
+    <!--
+    <a href="#" id="extractInfo" class="button button-green"><b>Extract info</b></a>
+    -->
+
+  </body>
+</html>
